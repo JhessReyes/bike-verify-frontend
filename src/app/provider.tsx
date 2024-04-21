@@ -11,7 +11,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   if (isCSR) {
     return (
       <ClerkProvider
-        signInForceRedirectUrl={"/dashboard"}
+        signInForceRedirectUrl={"/"}
         signUpForceRedirectUrl={"/"}
       >
         {children}

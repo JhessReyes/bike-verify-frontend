@@ -4,17 +4,16 @@ import React from 'react'
 
 const Page = () => {
     const { isSignedIn, user, isLoaded } = useUser();
-    if(!isLoaded){
+    if (!isLoaded) {
         return null
     }
 
-    if(isSignedIn) {
-        console.log('USER',user);
+    if (isSignedIn) {
+        console.log('USER', user);
     }
     return (
         <div>
-            Hola Mundo
-            <UserButton  />
+            <UserButton />
         </div>
     );
 }
